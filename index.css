@@ -1,14 +1,79 @@
-p{
-    background-color: paleturquoise;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #D1E9F6;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
-img{
-    width: 200px;
-    height: 100px;
-}
-.newP{
-    background-color: aquamarine;
 
+p{
+    text-align: center;
 }
-#testID{
-    background-color: violet;
+
+header {
+    background-color: #F6EACB;
+    padding: 15px 0;
+    border-bottom: 3px solid #F1D3CE;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #EECAD5;
+    border-radius: 5px;
+    color: white;
+}
+
+.content {
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.outsider {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 0 50px;
+}
+
+.inner {
+    background-color: #F6EACB;
+    border: 2px solid #F1D3CE;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.inner:hover {
+    transform: scale(1.05);
+}
+
+.inner img {
+    width: 100%;
+    border-bottom: 2px solid #F1D3CE;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
 }
