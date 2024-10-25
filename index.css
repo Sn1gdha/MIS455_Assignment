@@ -1,19 +1,16 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #D1E9F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #D1E9F6, #EECAD5);
     color: #333;
     margin: 0;
     padding: 0;
-}
-
-p{
-    text-align: center;
 }
 
 header {
     background-color: #F6EACB;
     padding: 15px 0;
     border-bottom: 3px solid #F1D3CE;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -31,49 +28,70 @@ header {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
+    padding: 10px 20px;
+    border-radius: 25px;
+    
 }
 
 .navbar a:hover {
-    background-color: #faa23e;
-    border-radius: 5px;
-    color: white;
+    background-color: #EECAD5;
+    color: black;
+    
 }
 
-.content {
-    padding: 30px;
-}
 
 h1 {
     text-align: center;
     margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    line-height: 0.5;
 }
 
 .outsider {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     padding: 0 50px;
 }
 
 .inner {
     background-color: #F6EACB;
     border: 2px solid #F1D3CE;
-    border-radius: 10px;
-    padding: 15px;
+    border-radius: 15px;
+    padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    flex: 1 1 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 320px;
+    cursor: pointer;
 }
 
 .inner:hover {
-    transform: scale(1.05);
+    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .inner img {
     width: 100%;
+    height: auto;
     border-bottom: 2px solid #F1D3CE;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
     border-radius: 10px;
+    
+}
+
+
+.inner p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
 }
